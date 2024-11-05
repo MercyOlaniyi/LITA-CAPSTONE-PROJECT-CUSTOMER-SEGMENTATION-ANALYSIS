@@ -74,7 +74,7 @@ After this cleaning step, the dataset was verified to ensure accuracy and consis
 
 ### Analysis Breakdown
 
-#### 1a. Use pivot tables to summarize
+#### 1a. Using Excel, Use pivot tables to summarize
 
 **i. Average subscription duration**
 
@@ -92,4 +92,47 @@ After this cleaning step, the dataset was verified to ensure accuracy and consis
 
 ![Revenue by Subscription type](https://github.com/user-attachments/assets/9e62c673-29f5-48f9-8559-c3b407603beb)
 
+**v. Subscription Trend
+
+![Subscription Trend](https://github.com/user-attachments/assets/1c4b88e8-8610-4bfa-b4d0-a5b4f0b0b049)
+
+vi. Top 5 Subscribers
+
+![Top 5 Subscribers](https://github.com/user-attachments/assets/5f07f2a6-4f31-4094-b0bf-5908354a3816)
+
+#### 1b. Write queries to extract key insights
+
+**i. Total number of customers from each region**
+
+```
+SELECT region, COUNT(CustomerID) AS Total_Customers
+FROM Customer_data
+GROUP BY region
+ORDER BY region;
+```
+
+![Total Sales by Customers SQL](https://github.com/user-attachments/assets/513a00e1-40cb-4e1a-86ce-3f1ee9693004)
+
+**ii. Most popular subscription type by the number of customers.**
+
+```
+SELECT TOP 1 SubscriptionType, COUNT(CustomerID) AS Total_Customers
+FROM Customer_data
+GROUP BY SubscriptionType
+ORDER BY Total_Customers DESC;
+```
+
+![Most Popular Sub by Customers](https://github.com/user-attachments/assets/0ce5ad0c-1b47-4bf4-96e0-b2fb483681e4)
+
+**iii. Customers who canceled their subscription within 6 months;** None. All subscription were for 12 months or higher
+
+```
+SELECT CustomerID, SubscriptionType, Region, 
+       DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) AS Subscription_Duration
+FROM Customer_data
+WHERE DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) <= 6
+  AND Canceled = 'TRUE';
+```
+
+![Customers who canceled in 6 Months](https://github.com/user-attachments/assets/1b680a83-a73e-4e00-a76b-27e36a9590c7)
 
