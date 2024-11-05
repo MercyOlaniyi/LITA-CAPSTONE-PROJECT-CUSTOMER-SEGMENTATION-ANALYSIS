@@ -62,5 +62,10 @@ During the initial data inspection, several duplicate rows were identified, whic
   
 After this cleaning step, the dataset was verified to ensure accuracy and consistency before proceeding with further analysis.
 
+Analytical Tools Employed
 
+- Microsoft Excel was used in analysis and summarization of the dataset
 
+- SQL was used to query the data for further insights
+
+- PowerBI was used to visualize the insight drawn from the dataset.
