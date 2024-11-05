@@ -192,3 +192,30 @@ GROUP BY Canceled;
 
 ### 3. Dashboard Overview 
 
+**a. Subscription Status by Customer**
+
+![Screenshot 2024-11-05 225315](https://github.com/user-attachments/assets/ce788bde-b35d-40f5-b0d3-de89c40eafb7)
+
+- **Active Subscriptions**: The teal segment represents active subscriptions with 11 active subscribers. This suggests that a majority of customers are actively using the service.
+
+- **Inactive Subscriptions**: The black segment represents inactive subscriptions with 9 inactive subscribers. Although it's smaller, it still indicates a portion of customers who have canceled their subscription.
+
+  **b. Subscription by Subscription Type**
+
+![Screenshot 2024-11-05 230014](https://github.com/user-attachments/assets/bf3eb26e-1a89-4c24-9d83-8b02ede08f89)
+
+**- Basic Subscriptions**: The larger segment represents basic subscriptions, and it accounts for 50% of the total customers. This suggests that a significant portion of the customer base opts for the Basic plan.
+
+**- Premium and Standard Subscriptions**: The black and ash segment represents Premium and Standard subscriptions respectively, and it accounts for 25% (respectively) of the total customers. This indicates a moderate
+
+level of adoption for the premium and Standard tier.
+
+**c. 
+
+**- Top-Performing Region:** The East region generates the highest revenue, with a total of 13K. This indicates that the East region contributes significantly to the overall revenue.
+
+**- Similar Revenue:** The North and West regions have similar revenue levels, both generating around 11K and 10K, respectively. This suggests that these regions have comparable performance in terms of revenue.
+
+**- Lowest Revenue:** The South region generates the lowest revenue among the four regions, with a total of 9K. This indicates that the South region's contribution to the overall revenue is relatively lower.
+
+
