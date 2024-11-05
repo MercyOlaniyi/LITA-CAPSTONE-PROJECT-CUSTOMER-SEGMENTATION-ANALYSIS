@@ -45,24 +45,26 @@ The following insights will be drawn from the dataset
 - subscription trends.
 
 ### Data Preprocessing
+
 Data loading and inspection: To have a general overview of the data
 
 **Data Cleaning Process**
+
 During the initial data inspection, several duplicate rows were identified, which could potentially skew the analysis results. To address this:
 
-1. Identification of Duplicates:
+**1. Identification of Duplicates:**
    
-- Method: Conditional formatting in Excel was used to highlight duplicate rows, enabling quick identification of repeated data entries.
+**- Method:** Conditional formatting in Excel was used to highlight duplicate rows, enabling quick identification of repeated data entries.
   
-2. Removal of Duplicates:
+**2. Removal of Duplicates:**
    
-- Tool: Excel’s "Remove Duplicates" function was applied to eliminate all duplicate entries from the dataset.
+**- Tool:** Excel’s "Remove Duplicates" function was applied to eliminate all duplicate entries from the dataset.
   
-- Fields Considered: Duplicate checks were conducted across key fields (e.g., customer ID, subscription type, and date fields) to ensure unique records without unintended loss of data.
+**- Fields Considered:** Duplicate checks were conducted across key fields (e.g., customer ID, subscription type, and date fields) to ensure unique records without unintended loss of data.
   
 After this cleaning step, the dataset was verified to ensure accuracy and consistency before proceeding with further analysis.
 
-Analytical Tools Employed
+#### Analytical Tools Employed
 
 - Microsoft Excel was used in analysis and summarization of the dataset
 
