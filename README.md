@@ -92,11 +92,11 @@ After this cleaning step, the dataset was verified to ensure accuracy and consis
 
 ![Revenue by Subscription type](https://github.com/user-attachments/assets/9e62c673-29f5-48f9-8559-c3b407603beb)
 
-**v. Subscription Trend
+**v. Subscription Trend**
 
 ![Subscription Trend](https://github.com/user-attachments/assets/1c4b88e8-8610-4bfa-b4d0-a5b4f0b0b049)
 
-vi. Top 5 Subscribers
+**vi. Top 5 Subscribers**
 
 ![Top 5 Subscribers](https://github.com/user-attachments/assets/5f07f2a6-4f31-4094-b0bf-5908354a3816)
 
@@ -136,3 +136,55 @@ WHERE DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) <= 6
 
 ![Customers who canceled in 6 Months](https://github.com/user-attachments/assets/1b680a83-a73e-4e00-a76b-27e36a9590c7)
 
+**iv. The average subscription duration for all customers.**
+
+```
+SELECT AVG(DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd)) AS Average_Subscription_Duration
+FROM Customer_data;
+```
+
+![Average Sub Duration](https://github.com/user-attachments/assets/f6ec92ea-ada5-4171-b231-2a79dec36d8a)
+
+**v. Customers with subscriptions longer than 12 months.**
+
+```
+SELECT CustomerID, SubscriptionType, Region, 
+       DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) AS Subscription_duration
+FROM Customer_data
+WHERE DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) > 12;
+```
+
+![Sub Longer than 12 months](https://github.com/user-attachments/assets/e9708b85-8be3-4466-ae0d-96ea0ad0e5b5)
+
+**vi. Total revenue by subscription type.**
+
+```
+SELECT SubscriptionType, SUM(Revenue) AS Total_Revenue
+FROM Customer_data
+GROUP BY SubscriptionType;
+```
+
+![Total Revue by Sub Type](https://github.com/user-attachments/assets/ba8f896a-cfe6-4a02-a2a3-982a0b51c909)
+
+
+**vii.  The top 3 regions by subscription cancellations.**
+
+```
+SELECT TOP 3 region, COUNT(CustomerID) AS Total_Cancellations
+FROM Customer_data
+WHERE Canceled = 'TRUE'
+GROUP BY Region
+ORDER BY Total_Cancellations DESC;
+```
+
+![Total Cancellation by Region](https://github.com/user-attachments/assets/ccf6378b-b8a0-4822-b2bd-9ca9bbe25587)
+
+**viii. The total number of active and canceled subscriptions. **
+
+```
+SELECT Canceled, COUNT(CustomerID) AS Total_Subscriptions
+FROM Customer_data
+GROUP BY Canceled;
+```
+
+![Number of canceled and Active users](https://github.com/user-attachments/assets/60ed4316-f3c1-4442-9baa-64b87b6650d3)
