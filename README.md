@@ -1,4 +1,20 @@
 # LITA-CAPSTONE-PROJECT-Customer Subscription Analysis
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[Project Overview](#project-overview)
+
+[Dataset Description](#dataset-description)
+
+[Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Data Preprocessing](#data-preprocessing)
+
+[Analytical Tools Employed](#analytical-tools-employed)
+
+[Analysis Breakdown](#analysis-breakdown)
+
+[Dashboard Overview](#dashboard-overview)
+
+[Recommendations](#recommendations)
 
 ### Project Overview
 
@@ -191,6 +207,8 @@ GROUP BY Canceled;
 
 
 ### 3. Dashboard Overview 
+
+![Screenshot 2024-11-05 233056](https://github.com/user-attachments/assets/8f67c39c-53b5-423d-b5d5-c8da9fa6eca5)
 
 - **Revenue**: The total revenue for the year is 41,000
   
