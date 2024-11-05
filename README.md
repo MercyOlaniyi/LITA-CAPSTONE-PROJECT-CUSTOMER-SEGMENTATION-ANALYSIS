@@ -200,22 +200,40 @@ GROUP BY Canceled;
 
 - **Inactive Subscriptions**: The black segment represents inactive subscriptions with 9 inactive subscribers. Although it's smaller, it still indicates a portion of customers who have canceled their subscription.
 
-  **b. Subscription by Subscription Type**
+**b. Subscription by Subscription Type**
 
 ![Screenshot 2024-11-05 230014](https://github.com/user-attachments/assets/bf3eb26e-1a89-4c24-9d83-8b02ede08f89)
 
-**- Basic Subscriptions**: The larger segment represents basic subscriptions, and it accounts for 50% of the total customers. This suggests that a significant portion of the customer base opts for the Basic plan.
+- **Basic Subscriptions**: The larger segment represents basic subscriptions, and it accounts for 50% of the total customers. This suggests that a significant portion of the customer base opts for the Basic plan.
 
-**- Premium and Standard Subscriptions**: The black and ash segment represents Premium and Standard subscriptions respectively, and it accounts for 25% (respectively) of the total customers. This indicates a moderate
+- **Premium and Standard Subscriptions**: The black and ash segment represents Premium and Standard subscriptions respectively, and it accounts for 25% (respectively) of the total customers. This indicates a moderate
 
 level of adoption for the premium and Standard tier.
 
-**c. 
+**c. Revenue by Region**
 
-**- Top-Performing Region:** The East region generates the highest revenue, with a total of 13K. This indicates that the East region contributes significantly to the overall revenue.
+![Screenshot 2024-11-05 230603](https://github.com/user-attachments/assets/669bd323-11d8-4fc5-a9a2-f2f0d10f28fa)
 
-**- Similar Revenue:** The North and West regions have similar revenue levels, both generating around 11K and 10K, respectively. This suggests that these regions have comparable performance in terms of revenue.
+- **Top-Performing Region**: The East region generates the highest revenue, with a total of 13K. This indicates that the East region contributes significantly to the overall revenue.
 
-**- Lowest Revenue:** The South region generates the lowest revenue among the four regions, with a total of 9K. This indicates that the South region's contribution to the overall revenue is relatively lower.
+- **Similar Revenue**: The North and West regions have similar revenue levels, both generating around 11K and 10K, respectively. This suggests that these regions have comparable performance in terms of revenue.
 
+- **Lowest Revenue**: The South region generates the lowest revenue among the four regions, with a total of 9K. This indicates that the South region's contribution to the overall revenue is relatively lower.
 
+**d. Customer Disbribution by Region**
+
+![Screenshot 2024-11-05 231801](https://github.com/user-attachments/assets/251e469a-e41a-412c-87a7-c4e4d4b9497d)
+
+- **Customer Distribution**: The bar chart shows the distribution of customers across four regions: East, North, South, and West.
+
+- **Equal Distribution**: All four regions have an equal number of customers, with each region having 5 customers. This indicates that there is an even distribution of customers across the regions.
+
+**e. Revenue by Subscription Type**
+
+![Screenshot 2024-11-05 231853](https://github.com/user-attachments/assets/3abce486-ea47-4dbb-a608-0d37a6f01a62)
+
+- **Top-Performing Subscription**: The Basic subscription type generates the highest revenue, with a total of 23K. This indicates that the Basic plan is the most popular and contributes significantly to the overall revenue.
+
+- **Lower Revenue**: The Standard and Premium subscriptions generate lower revenue compared to the Basic plan, with totals of 10K and 9K, respectively. This suggests that a smaller portion of revenue comes from these higher-tier subscriptions.
+
+  
