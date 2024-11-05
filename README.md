@@ -71,3 +71,6 @@ After this cleaning step, the dataset was verified to ensure accuracy and consis
 - SQL was used to query the data for further insights
 
 - PowerBI was used to visualize the insight drawn from the dataset.
+
+### Analysis Breakdown
+1. 
