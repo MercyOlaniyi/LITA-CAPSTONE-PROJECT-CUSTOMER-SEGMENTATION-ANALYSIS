@@ -188,3 +188,7 @@ GROUP BY Canceled;
 ```
 
 ![Number of canceled and Active users](https://github.com/user-attachments/assets/60ed4316-f3c1-4442-9baa-64b87b6650d3)
+
+
+### 3. Dashboard Overview 
+
